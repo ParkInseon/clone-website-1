@@ -42,14 +42,6 @@ document.write(`
                     <li><a href="">contact</a></li>
                 </ul>
             </nav>
-        </header>
-        <!-- Main Section -->
-        <section class="main layout">
-            <div class="contents main__contents">
-                <p class="main__title">Write a short pitch about who you are and what you do </p>
-                <div class="main__more"><a class="main__button button button--theme-white" href="">learn more</a></div>
-            </div>
-            <div class="bg main__img"></div>
-        </section>                                                                                                                                                                                                                                            
+        </header>                                                                                                                                                                                                                                        
     </div>
 `);
