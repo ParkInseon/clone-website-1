@@ -1,4 +1,3 @@
-
 /* Responsive */
 @media screen and (min-width:768px) and (max-width: 1280px) {
     :root {
@@ -21,6 +20,12 @@
     }    
     .join__title {
         max-width: 51.6vw;
+    }
+
+    
+    .product__contents figure img {
+        width: 34vw;
+        height: 34vw;
     }
 
     .footer__photo img {
@@ -47,38 +52,65 @@
     .button {
         border-width: 4px;
     }
-
     .header .gnb {
         display: none;
     }
-
     .navigation-btn {
         display: block;
     }
 
-    .bg {
+    .bg, .shop {
         padding: 30% 0;
     }
-    
-    .contents {
+    .contents, .product, .faq {
         align-items: center;
         padding: 20% 10%;
     }
-
     .main, .about {
         flex-direction: column-reverse;
     }
-    .studio, .events {
+    .studio, .events, .product__contents, .faq {
         flex-direction: column;
     }
+    .yoga, .join {
+        padding: 30% 10%;
+    }
+
     .main__contents {
         padding: 20% 6%;
     }
     .main__title, .main__more {
         max-width: 100%;
     }
-    .yoga, .join {
-        padding: 30% 10%;
+
+    .shop__description {
+        max-width: 10.25em;
+    }
+    .shop .button  {
+        transform: scale(0.8);
+    }
+
+    .product__contents figure img {
+        width: 68vw;
+        height: 68vw;
+    }
+
+    .faq__contents:first-child {
+        padding-left: 0;
+        border-right: none;
+        border-bottom: 2px solid white;
+    }
+    .faq__contents {
+        padding: 10% 0;
+    }
+    .faq__q {
+        padding-left: 0;
+    }
+    .faq__a {
+        width: 100%;
+        align-self: center;
+        padding: 10% 6%;
+        line-height: 1.5em;
     }
 
     .footer {
