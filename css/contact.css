@@ -1,0 +1,106 @@
+/* Contact Section */
+.contact__img {
+    background: no-repeat center/cover url(../img/studio3.jpg);
+}
+.contact__contents {
+    justify-content: flex-start;
+    padding-top: 100px;
+    background-color: var(--color-green-light);
+}
+.contact__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact__title {
+    color: var(--color-white);
+}
+.contact__description {
+    max-width: 12.5em;
+    align-self: center;
+    font-family: var(--font-serif);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* Send Section */
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--layout-height);
+    background-color: var(--color-grey-light);
+}
+.send .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.form__items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: calc(var(--padding-contents)*3);
+}
+.form__items label {
+    font-size: var(--font-size-m);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--text-spacing-2);
+}
+.form__items input, .form__items textarea {
+    width: 50%;
+    padding: 0.3em;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;   
+    color: var(--color-grey-dark);
+    font-family: var(--font-serif);
+    font-size: var(--font-size-m-3);
+    text-align: center;
+}
+.form__items textarea {
+    overflow: hidden;
+    resize: none;
+}
+.form__items input:focus, .form__items textarea:focus {
+    outline: none;
+}
+
+
+/* Info Section */
+.info {
+    flex-direction: row-reverse;
+}
+.info__img {
+    background: no-repeat center bottom/cover url(../img/info.jpg);
+}
+.info__contents {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.info__type {
+    padding: calc(var(--padding-contents)*2) 0 ;
+    font-size: var(--font-size-m);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--text-spacing-3);
+}
+.info__details {
+    display: block;
+    padding-top: var(--padding-contents);
+    font-size: var(--font-size-m-2);
+    font-weight: 400;
+}
+.info__num {
+    font-size: var(--font-size-m-3);
+}

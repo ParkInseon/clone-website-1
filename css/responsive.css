@@ -1,40 +1,44 @@
-/* Responsive */
-@media screen and (min-width:768px) and (max-width: 1280px) {
+@media (max-width:1330px) {
+    .main__contents {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1199px) {
     :root {
-        --font-size-s: 0.9vw;
-        --font-size-m: 1.3vw;
-        --font-size-m-2: 1.6vw;
-        --font-size-m-3: 1.9vw;
-        --font-size-m-4: 2.2vw;
-        --font-size-l: 2.5vw;
-        --font-size-l-2: 3.4vw;
-        --font-size-l-3: 4.4vw;
+        --font-size-s: 1vw;
+        --font-size-m: 1.33vw;
+        --font-size-m-2: 1.66vw;
+        --font-size-m-3: 2vw;
+        --font-size-m-4: 2.33vw;
+        --font-size-l: 2.66vw;
+        --font-size-l-2: 3.66vw;
+        --font-size-l-3: 4.66vw;
         
-        --layout-height: 62vw;
-        --footer-height: 36vw;
+        --layout-height: 66.66vw;
+        --footer-height: 40vw;
     }
 
-    .main__title, .main__more {
-        min-width: 33.6vw;
-        width: 100%;
-    }    
-    .join__title {
-        max-width: 51.6vw;
+    .contents {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    
     .product__contents figure img {
         width: 34vw;
         height: 34vw;
     }
 
     .footer__photo img {
-        width: 15vw;
-        height: 15vw;
+        width: 16vw;
+        height: 16vw;
     }
-}
+} 
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     :root {
         --font-size-s: 3vw;
         --font-size-m: 3.6vw;
@@ -49,8 +53,15 @@
         --footer-height: auto;
     }
 
+    /* Common */
+    .bg {
+        padding: 30% 0;
+    }
     .button {
         border-width: 4px;
+    }
+    .description {
+        line-height: 1.2em;
     }
     .header .gnb {
         display: none;
@@ -59,42 +70,47 @@
         display: block;
     }
 
-    .bg, .shop {
-        padding: 30% 0;
-    }
-    .contents, .product, .faq {
-        align-items: center;
-        padding: 20% 10%;
-    }
+    /* Home Page */
     .main, .about {
         flex-direction: column-reverse;
     }
-    .studio, .events, .product__contents, .faq {
+    .studio, .events {
         flex-direction: column;
     }
-    .yoga, .join {
-        padding: 30% 10%;
+    .studio__contents, .yoga, .events__contents, .about__contents {
+        padding: 24% 12%;
     }
+    .main__contents, .join {
+        padding: 24% 0;
+    }
+    .yoga__description {
+        border-bottom: 2px solid white;
+    }
+    .join__title {
+        max-width: 8.5em;
+    }
+    
 
-    .main__contents {
-        padding: 20% 6%;
+    /* Shop Page */
+    .product__contents, .faq {
+        flex-direction: column;
     }
-    .main__title, .main__more {
-        max-width: 100%;
-    }
-
     .shop__description {
         max-width: 10.25em;
+    }
+    .shop, .product, .faq {
+        padding: 24% 12%;
     }
     .shop .button  {
         transform: scale(0.8);
     }
-
     .product__contents figure img {
         width: 68vw;
         height: 68vw;
     }
-
+    .faq {
+        padding: 20% 10%;
+    }
     .faq__contents:first-child {
         padding-left: 0;
         border-right: none;
@@ -113,8 +129,23 @@
         line-height: 1.5em;
     }
 
+    /* Conntact Page */
+    .contact, .info {
+        flex-direction: column;
+    }
+    .contact__contents, .form, .info__contents {
+        padding: 24% 12%;
+    }
+    .form__items input, .form__items textarea {
+        width: 100%;
+    }
+    .contact__description {
+        max-width: 9.2em;
+    }
+
+    /* Footer */
     .footer {
-        padding: 20% 6%;
+        padding: 24% 0;
     }
     .footer__photo img {
         width: 28vw;
@@ -123,11 +154,5 @@
     .footer__text > li {
         font-size: calc(var(--font-size-s)*0.8);
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 499px) {
-    .main__title, .main__more {
-        min-width: 100%;
     }
 }

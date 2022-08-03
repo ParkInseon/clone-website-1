@@ -10,14 +10,9 @@
     background: no-repeat bottom/cover url(../img/main2.jpg);
 }
 .main__contents {
-    flex: 1 1 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 100px;
     background-color: var(--color-green-dark);
-    text-align: center;
-    padding: 4%;
 }
 .main__title {
     font-size: var(--font-size-l-2);
@@ -26,9 +21,8 @@
     letter-spacing: var(--text-spacing-1);
     color: var(--color-white);
 }
-.main__title, .main__more {
-    min-width: 30.125rem;
-    max-width: 31.875rem;
+.main__title {
+    max-width: 11.591em;
 }
 
 
@@ -37,13 +31,10 @@
     background: no-repeat center/cover url(../img/studio2.jpg);
 }
 .studio__contents {
-    align-items: flex-start;
-}
-.studio__title, .studio__description, .studio__keywords {
-    max-width: 30.125rem;
-    width: 100%;
+    justify-content: flex-start;
 }
 .studio__description {
+    max-width: 14.063em;
     margin-bottom: calc(var(--margin-elements)*2);
     font-size: var(--font-size-l);
 }
@@ -73,7 +64,7 @@
 }
 .yoga__description {
     padding-bottom: 1em;
-    border-bottom: 2px solid var(--color-white);
+    border-bottom: 1px solid white;
 }
 
 
@@ -82,12 +73,11 @@
     background: no-repeat left top/cover url(../img/summer.jpg);
 }
 .events__contents {
-    align-items: flex-start;
+    justify-content: flex-start;
     background-color: #ffffff;
 }
-.events__contents > * {
-    max-width: 30.125rem;
-    width: 100%;
+.events__description {
+    max-width: 16.071em;
 }
 .events__place {
     font-size: var(--font-size-m-3);
@@ -105,15 +95,14 @@
 
 
 /* About Section*/
-.about__contents > * {
-    max-width: 30.125rem;
-    width: 100%;
-}
 .about__contents {
-    align-items: flex-end;
+    justify-content: flex-end;
+}
+.about__description {
+    max-width: 16.071em;
 }
 .about__img {
-    background: no-repeat left top/cover url(../img/about2.jpg);
+    background: no-repeat left top/cover url(../img/about.jpg);
 }
 .about__keywords {
     margin-bottom: 3em;
@@ -179,7 +168,7 @@
     text-align: center;
 }
 .join__title {
-    max-width: 41.25rem;
+    max-width: 11.786em;
     font-size: var(--font-size-l-3);
     font-weight: 800;
     line-height: 1em;
