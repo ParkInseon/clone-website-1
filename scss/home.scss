@@ -1,0 +1,178 @@
+@import '_global';
+@import '../css/ariables.css';
+
+/* Main Section */
+.main {
+    display: flex;
+    width: 100%;
+    height: var(--layout-height);
+    &__img {
+        flex: 1 1 50%;
+        background: no-repeat bottom/cover url(../img/main2.jpg);
+    }
+    &__contents {
+        justify-content: flex-end;
+        padding-top: 100px;
+        background-color: var(--color-green-dark);
+    }
+    &__title {
+        max-width: 11.591em;
+        color: var(--color-white);
+        font: {
+            size: var(--font-size-l-2);
+            weight: 800;
+        }
+        line-height: 1em;
+        letter-spacing: var(--text-spacing-1);
+    }
+}
+
+/* Studio Section */
+.studio {
+    &__img {
+        background: no-repeat center/cover url(../img/studio2.jpg);
+    }
+    &__contents {
+        justify-content: flex-start;
+    }
+    &__description {
+        max-width: 14.063em;
+        margin-bottom: calc(var(--margin-elements)*2);
+        font-size: var(--font-size-l);
+    }
+    &__keywords {
+        height: 40px;
+    }
+}
+
+/* Yoga Section */
+.yoga {
+    @include flexbox-center(column);
+    height: var(--layout-height);
+    background-color: var(--color-grey-light);
+    &__list {
+        text-align: center;
+    }
+    &__title {
+        padding-top: 1.8em;
+        font: {
+            size: var(--font-size-m);
+            weight: 800;
+        }
+        text-transform: uppercase;
+        letter-spacing: var(--text-spacing-2);
+    }
+    &__description {
+        padding-bottom: 1em;
+        border-bottom: 1px solid white;
+    }
+}
+
+/* Events */
+.events {
+    &__img {
+        background: no-repeat left top/cover url(../img/summer.jpg);
+    }
+    &__contents {
+        justify-content: flex-start;
+        background-color: white;
+    }
+    &__description {
+        max-width: 16.071em;
+    }
+    &__place {
+        margin-top: var(--margin-elements);
+        font: {
+            size: var(--font-size-m-3);
+            weight: 800;
+        }
+        text-transform: uppercase;
+        letter-spacing: var(--text-spacing-2);
+    }
+    &__time {
+        margin-top: var(--margin-contents);
+        font-size: var(--font-size-s);
+        text-transform: uppercase;
+        letter-spacing: var(--text-spacing-3);
+    }
+}
+
+/* About Section*/
+.about {
+    &__contents {
+        justify-content: flex-end;
+    }
+    &__description {
+        max-width: 16.071em;
+    }
+    &__img {
+        background: no-repeat left top/cover url(../img/about.jpg);
+    }
+    &__keywords {
+        margin-bottom: 3em;
+    }
+}
+
+/* Keyword Animation */
+.keywords {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: var(--font-size-m-3);
+    letter-spacing: var(--text-spacing-2);
+    text-transform: uppercase;
+    .keyword {
+        position: absolute;
+        opacity: 0;
+        animation: {
+            duration: 8s;
+            iteration-count: infinite;
+        }
+        $animation: fadeInAndOut;
+        @for $i from 1 through 3 {
+            &:nth-of-type(#{$i}) {
+                animation-name: $animation#{$i};
+            }
+        }
+        @include keyframes($animation+1) {
+            0% {opacity: 0;}
+            25% {opacity: 1;}
+            50% {opacity: 0;}
+            75% {opacity: 0;}
+            100% {opacity: 0;}
+        }
+        @include keyframes($animation+2) {
+            0% {opacity: 0;}
+            25% {opacity: 0;}
+            50% {opacity: 1;}
+            75% {opacity: 0;}
+            100% {opacity: 0;}
+        }
+        @include keyframes($animation+3) {
+            0% {opacity: 0;}
+            25% {opacity: 0;}
+            50% {opacity: 0;}
+            75% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+    }
+} 
+
+/* Join Section */
+.join {
+    @include flexbox-center(column);
+    height: var(--layout-height);
+    padding: 6%;
+    background-color: var(--color-green-light);
+    text-align: center;
+    &__title {
+        max-width: 11.786em;
+        color: var(--color-white);
+        font: {
+            size: var(--font-size-l-3);
+            weight: 800;
+        }
+        line-height: 1em;
+        letter-spacing: var(--text-spacing-1);
+    }
+}

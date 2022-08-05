@@ -1,0 +1,166 @@
+@import url(../css/ariables.css);
+/* Main Section */
+.main {
+  display: flex;
+  width: 100%;
+  height: var(--layout-height); }
+  .main__img {
+    flex: 1 1 50%;
+    background: no-repeat bottom/cover url(../img/main2.jpg); }
+  .main__contents {
+    justify-content: flex-end;
+    padding-top: 100px;
+    background-color: var(--color-green-dark); }
+  .main__title {
+    max-width: 11.591em;
+    color: var(--color-white);
+    font-size: var(--font-size-l-2);
+    font-weight: 800;
+    line-height: 1em;
+    letter-spacing: var(--text-spacing-1); }
+
+/* Studio Section */
+.studio__img {
+  background: no-repeat center/cover url(../img/studio2.jpg); }
+
+.studio__contents {
+  justify-content: flex-start; }
+
+.studio__description {
+  max-width: 14.063em;
+  margin-bottom: calc(var(--margin-elements)*2);
+  font-size: var(--font-size-l); }
+
+.studio__keywords {
+  height: 40px; }
+
+/* Yoga Section */
+.yoga {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: var(--layout-height);
+  background-color: var(--color-grey-light); }
+  .yoga__list {
+    text-align: center; }
+  .yoga__title {
+    padding-top: 1.8em;
+    font-size: var(--font-size-m);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: var(--text-spacing-2); }
+  .yoga__description {
+    padding-bottom: 1em;
+    border-bottom: 1px solid white; }
+
+/* Events */
+.events__img {
+  background: no-repeat left top/cover url(../img/summer.jpg); }
+
+.events__contents {
+  justify-content: flex-start;
+  background-color: white; }
+
+.events__description {
+  max-width: 16.071em; }
+
+.events__place {
+  margin-top: var(--margin-elements);
+  font-size: var(--font-size-m-3);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: var(--text-spacing-2); }
+
+.events__time {
+  margin-top: var(--margin-contents);
+  font-size: var(--font-size-s);
+  text-transform: uppercase;
+  letter-spacing: var(--text-spacing-3); }
+
+/* About Section*/
+.about__contents {
+  justify-content: flex-end; }
+
+.about__description {
+  max-width: 16.071em; }
+
+.about__img {
+  background: no-repeat left top/cover url(../img/about.jpg); }
+
+.about__keywords {
+  margin-bottom: 3em; }
+
+/* Keyword Animation */
+.keywords {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: var(--font-size-m-3);
+  letter-spacing: var(--text-spacing-2);
+  text-transform: uppercase; }
+  .keywords .keyword {
+    position: absolute;
+    opacity: 0;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; }
+    .keywords .keyword:nth-of-type(1) {
+      animation-name: fadeInAndOut1; }
+    .keywords .keyword:nth-of-type(2) {
+      animation-name: fadeInAndOut2; }
+    .keywords .keyword:nth-of-type(3) {
+      animation-name: fadeInAndOut3; }
+
+@keyframes fadeInAndOut1 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeInAndOut2 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeInAndOut3 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/* Join Section */
+.join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: var(--layout-height);
+  padding: 6%;
+  background-color: var(--color-green-light);
+  text-align: center; }
+  .join__title {
+    max-width: 11.786em;
+    color: var(--color-white);
+    font-size: var(--font-size-l-3);
+    font-weight: 800;
+    line-height: 1em;
+    letter-spacing: var(--text-spacing-1); }

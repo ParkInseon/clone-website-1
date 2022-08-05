@@ -1,0 +1,64 @@
+:root {
+    --font-default: 'Mukta Mahee', sans-serif;
+    --font-serif: 'Cormorant', serif;
+
+    --font-size-s: 0.75rem; /* 12 */
+    --font-size-m: 1rem; /* 16 */
+    --font-size-m-2: 1.25rem; /* 20 */
+    --font-size-m-3: 1.5rem; /* 24 */
+    --font-size-m-4: 1.75rem; /* 28 */
+    --font-size-l: 2rem; /* 32 */
+    --font-size-l-2: 2.75rem; /* 44 */
+    --font-size-l-3: 3.5rem; /* 56 */
+
+    --text-spacing-1: 0.06em;
+    --text-spacing-2: calc(var(--text-spacing-1)*2);
+    --text-spacing-3: calc(var(--text-spacing-2)*2);
+
+    --color-black: #3A3941;
+    --color-white: #F4F4F3;
+    --color-grey-light: #eeeeee;
+    --color-grey-dark: #9c9c9c;
+    --color-green-light: #d6e2be;
+    --color-green-dark: #CCDCAD;
+    
+    --padding-contents: 0.5em;
+    --margin-contents: 0.5em;
+    --margin-elements: 1em;
+    --margin-button: 4em;
+
+    --layout-height: 50em;
+    --footer-height: 30em;
+}
+
+@media (max-width: 1199px) {
+    :root {
+        --font-size-s: 1vw;
+        --font-size-m: 1.33vw;
+        --font-size-m-2: 1.66vw;
+        --font-size-m-3: 2vw;
+        --font-size-m-4: 2.33vw;
+        --font-size-l: 2.66vw;
+        --font-size-l-2: 3.66vw;
+        --font-size-l-3: 4.66vw;
+        
+        --layout-height: 66.66vw;
+        --footer-height: 40vw;
+    }
+}
+
+@media (max-width: 767px) {
+    :root {
+        --font-size-s: 3vw;
+        --font-size-m: 3.6vw;
+        --font-size-m-2: 4.0vw;
+        --font-size-m-3: 4.8vw;
+        --font-size-m-4: 5.6vw;
+        --font-size-l: 6.4vw;
+        --font-size-l-2: 8.8vw;
+        --font-size-l-3: 9vw;
+
+        --layout-height: auto;
+        --footer-height: auto;
+    }
+}

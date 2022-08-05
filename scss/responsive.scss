@@ -1,0 +1,156 @@
+@import '_global';
+@import '../css/variables.css';
+
+@include media(1330) {
+    .main__contents {
+        justify-content: center;
+        padding: {
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+@include media(1199) {
+    $width: 1200;
+
+    .contents {
+        justify-content: center;
+        padding: {
+            left: 0;
+            right: 0;
+        }
+    }
+    .product__contents {
+        figure {
+            img {
+                width: px-to-vw(27.188rem, $width);
+                height: px-to-vw(27.188rem, $width);
+            }
+        }
+    }
+    .footer__photo {
+        img {
+            width: px-to-vw(12rem, $width);
+            height: px-to-vw(12rem, $width);
+        }
+    }
+} 
+
+@include media(767) {
+    $width: 768;
+
+    /* Common */
+    .bg {
+        padding: 30% 0;
+    }
+    .button {
+        border-width: 4px;
+    }
+    .description {
+        line-height: 1.2em;
+    }
+    .header{
+        .gnb {
+            display: none;
+        }
+        .navigation-btn {
+            display: block;
+        }
+    }
+
+    /* Home Page */
+    .main, .about {
+        flex-direction: column-reverse;
+    }
+    .studio, .events {
+        flex-direction: column;
+    }
+    .studio__contents, .yoga, .events__contents, .about__contents {
+        padding: 24% 12%;
+    }
+    .main__contents, .join {
+        padding: 24% 0;
+    }
+    .yoga__description {
+        border-bottom: 2px solid white;
+    }
+    .join__title {
+        max-width: 8.5em;
+    }
+
+    /* Shop Page */
+    .product__contents, .faq {
+        flex-direction: column;
+    }
+    .shop__description {
+        max-width: 10.25em;
+    }
+    .shop, .product, .faq {
+        padding: 24% 12%;
+    }
+    .shop .button  {
+        transform: scale(0.8);
+    }
+    .product__contents {
+        figure {
+            img {
+                width: px-to-vw(520px, $width);
+                height: px-to-vw(520px, $width);
+            }
+        }
+    }
+    .faq {
+        padding: 20% 10%;
+        &__contents {
+            padding: 10% 0;
+            &:first-child {
+                padding-left: 0;
+                border: {
+                    right: none;
+                    bottom: 2px solid white;
+                }
+            }
+        }
+        &__q {
+            padding-left: 0;
+        }
+        &__a {
+            width: 100%;
+            align-self: center;
+            padding: 10% 6%;
+            line-height: 1.5em;
+        }
+    }
+    
+    /* Conntact Page */
+    .contact, .info {
+        flex-direction: column;
+    }
+    .contact__contents, .form, .info__contents {
+        padding: 24% 12%;
+    }
+    .form__items input, .form__items textarea {
+        width: 100%;
+    }
+    .contact__description {
+        max-width: 9.2em;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 24% 0;
+        &__photo {
+            img {
+                width: px-to-vw(190px, $width);
+                height: px-to-vw(190px, $width);
+            }
+        }
+        &__text {
+            > li {
+                font-size: calc(var(--font-size-s)*0.8);
+                text-align: center;
+            }
+        }
+    }
+}

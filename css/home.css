@@ -15,14 +15,12 @@
     background-color: var(--color-green-dark);
 }
 .main__title {
+    max-width: 11.591em;
     font-size: var(--font-size-l-2);
     font-weight: 800;
     line-height: 1em;
     letter-spacing: var(--text-spacing-1);
     color: var(--color-white);
-}
-.main__title {
-    max-width: 11.591em;
 }
 
 

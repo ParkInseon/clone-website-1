@@ -109,7 +109,6 @@
 }
 .faq__q button {
     padding: calc(var(--padding-contents)*3);
-    color: var(--color-black);
     font-family: inherit;
     font-size: var(--font-size-m-2);
     font-weight: 600;

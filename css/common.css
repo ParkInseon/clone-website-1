@@ -55,9 +55,10 @@ ul {
 }
 
 button {
-    cursor: pointer;
-    background: transparent;
     border: none;
+    background: transparent;
+    color: var(--color-black);
+    cursor: pointer;
 }
 
 
@@ -109,8 +110,9 @@ h2.title {
     letter-spacing: var(--text-spacing-2);
     padding: var(--font-size-m) calc( var(--font-size-m)*3);
     margin-top: var(--margin-button);
-    transition: background-color 0.3s ease-in;
-    transition: border-color 0.3s ease-in;
+    transition-property: background-color, border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
 }
 .button--theme-white:hover {
     background-color: #ffffff;
@@ -145,12 +147,10 @@ h2.title {
 
 .navigation-btn {
     display: none;
+    align-self: center;
     position: absolute;
     left: calc(100% + var(--margin-elements));
-    align-self: center;
-    border: none;
     font-size: var(--font-size-l);
-    color: var(--color-black);
 }
 
 .gnb__menu {
@@ -265,9 +265,6 @@ h2.title {
     position: absolute;
     left: calc(100% + var(--margin-elements));
     align-self: center;
-    background: transparent;
-    border: none;
-    color: var(--color-black);
     font-size: var(--font-size-l);
 }
 .mobile__button.active {
@@ -323,7 +320,6 @@ h2.title {
     font-size: var(--font-size-m-3);
 }
 .footer__text {
-    display: flex;
     margin-top: var(--margin-elements);
 }
 .footer__text > li {

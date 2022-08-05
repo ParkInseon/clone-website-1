@@ -1,0 +1,89 @@
+@import url(../css/variables.css);
+@media (max-width: 1330px) {
+  .main__contents {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (max-width: 1199px) {
+  .contents {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0; }
+  .product__contents figure img {
+    width: 36.25067vw;
+    height: 36.25067vw; }
+  .footer__photo img {
+    width: 16vw;
+    height: 16vw; } }
+
+@media (max-width: 767px) {
+  /* Common */
+  .bg {
+    padding: 30% 0; }
+  .button {
+    border-width: 4px; }
+  .description {
+    line-height: 1.2em; }
+  .header .gnb {
+    display: none; }
+  .header .navigation-btn {
+    display: block; }
+  /* Home Page */
+  .main, .about {
+    flex-direction: column-reverse; }
+  .studio, .events {
+    flex-direction: column; }
+  .studio__contents, .yoga, .events__contents, .about__contents {
+    padding: 24% 12%; }
+  .main__contents, .join {
+    padding: 24% 0; }
+  .yoga__description {
+    border-bottom: 2px solid white; }
+  .join__title {
+    max-width: 8.5em; }
+  /* Shop Page */
+  .product__contents, .faq {
+    flex-direction: column; }
+  .shop__description {
+    max-width: 10.25em; }
+  .shop, .product, .faq {
+    padding: 24% 12%; }
+  .shop .button {
+    transform: scale(0.8); }
+  .product__contents figure img {
+    width: 67.70833vw;
+    height: 67.70833vw; }
+  .faq {
+    padding: 20% 10%; }
+    .faq__contents {
+      padding: 10% 0; }
+      .faq__contents:first-child {
+        padding-left: 0;
+        border-right: none;
+        border-bottom: 2px solid white; }
+    .faq__q {
+      padding-left: 0; }
+    .faq__a {
+      width: 100%;
+      align-self: center;
+      padding: 10% 6%;
+      line-height: 1.5em; }
+  /* Conntact Page */
+  .contact, .info {
+    flex-direction: column; }
+  .contact__contents, .form, .info__contents {
+    padding: 24% 12%; }
+  .form__items input, .form__items textarea {
+    width: 100%; }
+  .contact__description {
+    max-width: 9.2em; }
+  /* Footer */
+  .footer {
+    padding: 24% 0; }
+    .footer__photo img {
+      width: 24.73958vw;
+      height: 24.73958vw; }
+    .footer__text > li {
+      font-size: calc(var(--font-size-s)*0.8);
+      text-align: center; } }

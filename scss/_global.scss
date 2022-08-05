@@ -1,0 +1,46 @@
+@mixin flexbox($d, $j, $a) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin flexbox-center($d:row) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition-set($d, $t, $p...) {
+    transition-property: $p;
+    transition-duration: $d;
+    transition-timing-function: $t;
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@function remove-unit($value) { // euid/scss-mixins library
+    @return ($value / ($value * 0 + 1));
+}
+
+@function px-to-vw($num, $width) {
+    $i: null;
+    @if(unit($num) == rem or unit($num) == em) {
+        $i: $num * 16;
+    } @else if(unit($num) == px) {
+        $i: $num;
+    }
+    $result: remove-unit(($i*100)/$width);
+    @return #{$result}vw;
+}
+
+@mixin media($mw) {
+    @media(max-width:#{$mw}px) {
+        @content;
+    }
+}
